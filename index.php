@@ -1,5 +1,12 @@
 <?php
 
+echo readfile("data.json");
+
+
+
+
+/*
+OLD HEALTHY FOOD GENERATOR
 $file = fopen("data.json", w);
 $arr = Array();
 
@@ -52,3 +59,4 @@ $json = json_encode($arr);
 fwrite($file, $json);
 
 echo readfile("data.json");
+*/
