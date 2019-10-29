@@ -34,7 +34,7 @@ class HealthyFood {
     }
 }
 
-while ($x < 10000) {
+while ($x < 25000) {
     $food_type = rand(0, 25);
     $food_group = rand(0, 14);
     $food_taste = rand(0, 6);
