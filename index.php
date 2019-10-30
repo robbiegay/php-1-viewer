@@ -1,12 +1,27 @@
 <?php
 
-echo readfile("data.json");
+// echo readfile("data.json");
 
 
+"http://localhost:8888/index.php?function=getAllData"
+
+// $servername = "localhost";
+// $username = "root";
+// $password = "root";
+// $dbname = "apiViewer";
+
+// // Create connection
+// $conn = new mysqli($servername, $username, $password, $dbname);
+
+// $query = mysql_query("select * from foodTable", $conn);
+
+// print_r($query);
+
+// $conn->close();
 
 
 /*
-OLD HEALTHY FOOD GENERATOR
+// OLD HEALTHY FOOD GENERATOR
 $file = fopen("data.json", w);
 $arr = Array();
 
@@ -41,7 +56,7 @@ class HealthyFood {
     }
 }
 
-while ($x < 25000) {
+while ($x < 100000) {
     $food_type = rand(0, 25);
     $food_group = rand(0, 14);
     $food_taste = rand(0, 6);
@@ -50,7 +65,7 @@ while ($x < 25000) {
         $group[$food_group], 
         $taste[$food_taste]
         );
-    array_push($arr, $item->message());
+    array_push($arr, $item);
     $x++;
 }
 
